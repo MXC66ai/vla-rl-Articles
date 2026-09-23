@@ -1,0 +1,80 @@
+site_name: VLA × Skill-based RL Papers
+site_description: Curated collection of recent papers on Vision-Language-Action models and Skill-based Reinforcement Learning for accelerated robot learning
+site_url: https://MXC66ai.github.io/vla-rl-Articles
+repo_url: https://github.com/MXC66ai/vla-rl-Articles
+repo_name: MXC66ai/vla-rl-Articles
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Papers:
+    - Overview: papers/index.md
+    - VLA Models: papers/vla.md
+    - Skill-based RL: papers/skill-rl.md
+    - Surveys: papers/surveys.md
+  - Comparisons:
+    - VLA Model Comparison: tables/vla-comparison.md
+    - Skill-RL Comparison: tables/skill-rl-comparison.md
+  - Taxonomy: taxonomy/taxonomy.md
+  - Timeline: taxonomy/timeline.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - minify:
+      minify_html: true
+  - awesome-pages
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MXC66ai/vla-rl-Articles
+  generator: false
+
+copyright: Copyright &copy; 2026 MXC66ai. Maintained with ❤️ for the robot learning community.
