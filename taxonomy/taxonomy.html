@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>VLA × Skill-RL Taxonomy Tree</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;display:flex;justify-content:center;padding:40px}
+svg{max-width:1200px;width:100%}
+.tax-label{font-size:13px;font-weight:600;text-anchor:middle}
+.tax-sub{font-size:11px;text-anchor:middle;fill:#555}
+.tax-count{font-size:10px;text-anchor:middle;fill:#999}
+.node-root{fill:#1a1a2e}
+.node-root text{fill:#fff}
+.node-1{fill:#16213e;rx:6}
+.node-1 text{fill:#fff}
+.node-2{fill:#0f3460;rx:5}
+.node-2 text{fill:#e0e0e0}
+.node-3{fill:#e8e8e8;rx:4;stroke:#ccc;stroke-width:1}
+.node-3 text{fill:#222}
+.node-leaf{fill:#f5f5f5;rx:3;stroke:#ddd;stroke-width:1}
+.node-leaf text{fill:#333}
+.edge{stroke:#999;stroke-width:1.5;fill:none;stroke-dasharray:0}
+.edge-root{stroke:#1a1a2e;stroke-width:2.5}
+</style></head><body>
+<svg viewBox="0 0 1100 950">
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#555"/></marker></defs>
+
+  <!-- Title -->
+  <text x="550" y="30" font-size="20" font-weight="700" text-anchor="middle" fill="#1a1a2e">VLA × Skill-based RL for Accelerated Robot Learning — Taxonomy</text>
+  <text x="550" y="50" font-size="12" text-anchor="middle" fill="#888">September 2026 · 27 surveyed papers</text>
+
+  <!-- Layer 0: Root -->
+  <rect class="node-root" x="420" y="70" width="260" height="36" rx="8"/>
+  <text class="tax-label" x="550" y="93" fill="#fff" font-size="15">Robot Learning Acceleration</text>
+
+  <!-- Edges L0→L1 -->
+  <path class="edge edge-root" d="M475,106 L300,170" marker-end="url(#arrow)"/>
+  <path class="edge edge-root" d="M625,106 L800,170" marker-end="url(#arrow)"/>
+
+  <!-- Layer 1: Two pillars -->
+  <rect class="node-1" x="170" y="140" width="260" height="36" rx="6"/>
+  <text class="tax-label" x="300" y="163" fill="#fff" font-size="14">Vision-Language-Action (VLA)</text>
+  <text class="tax-count" x="300" y="168" fill="#aac">13 papers</text>
+
+  <rect class="node-1" x="670" y="140" width="260" height="36" rx="6"/>
+  <text class="tax-label" x="800" y="163" fill="#fff" font-size="14">Skill-based Reinforcement Learning</text>
+  <text class="tax-count" x="800" y="168" fill="#aac">7 papers</text>
+
+  <!-- VLA subtree edges -->
+  <path class="edge" d="M260,176 L260,220 L180,240" marker-end="url(#arrow)"/>
+  <path class="edge" d="M300,176 L300,220 L500,240" marker-end="url(#arrow)"/>
+  <path class="edge" d="M340,176 L340,220 L420,240" marker-end="url(#arrow)"/>
+
+  <!-- VLA Subcategories -->
+  <rect class="node-2" x="100" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="180" y="240" fill="#e0e0e0" font-size="12">Temporal Reasoning</text>
+
+  <rect class="node-2" x="420" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="500" y="240" fill="#e0e0e0" font-size="12">Cross-Embodiment</text>
+
+  <rect class="node-2" x="340" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="420" y="240" fill="#e0e0e0" font-size="12">VLA + RL</text>
+
+  <!-- Temporal children -->
+  <path class="edge" d="M145,252 L145,280 L90,295" marker-end="url(#arrow)"/>
+  <path class="edge" d="M180,252 L180,280 L180,295" marker-end="url(#arrow)"/>
+  <path class="edge" d="M215,252 L215,280 L270,295" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="50" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="115" y="298" font-size="11" fill="#333">StreamPI</text>
+
+  <rect class="node-leaf" x="115" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="180" y="298" font-size="11" fill="#333">MemoryVLA++</text>
+
+  <rect class="node-leaf" x="210" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="275" y="298" font-size="11" fill="#333">DynamicVLA</text>
+
+  <rect class="node-leaf" x="157" y="312" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="222" y="330" font-size="11" fill="#333">VLA-Reasoner</text>
+  <path class="edge" d="M145,252 L222,345" marker-end="url(#arrow)"/>
+
+  <!-- Cross-embodiment children -->
+  <path class="edge" d="M460,252 L460,280 L420,295" marker-end="url(#arrow)"/>
+  <path class="edge" d="M500,252 L500,280 L540,295" marker-end="url(#arrow)"/>
+  <path class="edge" d="M540,252 L540,280 L660,295" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="370" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="435" y="298" font-size="11" fill="#333">Qwen-VLA</text>
+
+  <rect class="node-leaf" x="485" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="550" y="298" font-size="11" fill="#333">RynnVLA-001</text>
+
+  <rect class="node-leaf" x="605" y="280" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="670" y="298" font-size="11" fill="#333">XR-1</text>
+
+  <rect class="node-leaf" x="370" y="312" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="435" y="330" font-size="11" fill="#333">OTTER</text>
+  <path class="edge" d="M500,252 L435,345" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="485" y="312" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="550" y="330" font-size="11" fill="#333">MAP-VLA</text>
+  <path class="edge" d="M540,252 L550,345" marker-end="url(#arrow)"/>
+
+  <!-- VLA+RL children -->
+  <path class="edge" d="M460,252 L460,360 L420,395" marker-end="url(#arrow)"/>
+  <path class="edge" d="M540,252 L540,360 L660,395" marker-end="url(#arrow)"/>
+  <path class="edge" d="M500,252 L500,360 L540,395" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="370" y="380" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="435" y="398" font-size="11" fill="#333">ProphRL</text>
+
+  <rect class="node-leaf" x="485" y="380" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="550" y="398" font-size="11" fill="#333">LaST₀</text>
+
+  <rect class="node-leaf" x="605" y="380" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="670" y="398" font-size="11" fill="#333">Dexora</text>
+
+  <!-- ===== SKILL-RL SUBTREE ===== -->
+  <path class="edge" d="M740,176 L740,220 L800,240" marker-end="url(#arrow)"/>
+  <path class="edge" d="M800,176 L800,220 L880,240" marker-end="url(#arrow)"/>
+  <path class="edge" d="M860,176 L860,220 L720,240" marker-end="url(#arrow)"/>
+
+  <rect class="node-2" x="720" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="800" y="240" fill="#e0e0e0" font-size="12">Skill from LLM</text>
+
+  <rect class="node-2" x="800" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="880" y="240" fill="#e0e0e0" font-size="12">Online/Residual</text>
+
+  <rect class="node-2" x="640" y="220" width="160" height="32" rx="5"/>
+  <text class="tax-label" x="720" y="240" fill="#e0e0e0" font-size="12">Video-based</text>
+
+  <!-- LLM children -->
+  <path class="edge" d="M760,252 L760,285 L720,300" marker-end="url(#arrow)"/>
+  <path class="edge" d="M800,252 L800,285 L840,300" marker-end="url(#arrow)"/>
+  <path class="edge" d="M840,252 L840,285 L960,300" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="670" y="285" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="735" y="303" font-size="11" fill="#333">SkillRL</text>
+
+  <rect class="node-leaf" x="785" y="285" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="850" y="303" font-size="11" fill="#333">Master Skill L.</text>
+
+  <rect class="node-leaf" x="900" y="285" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="965" y="303" font-size="11" fill="#333">Efficient Skill</text>
+
+  <!-- Online/Residual children -->
+  <path class="edge" d="M880,252 L880,320 L880,340" marker-end="url(#arrow)"/>
+  <path class="edge" d="M920,252 L920,320 L990,340" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="820" y="325" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="885" y="343" font-size="11" fill="#333">Residual RL</text>
+
+  <rect class="node-leaf" x="960" y="325" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="1025" y="343" font-size="11" fill="#333">Act While Wait</text>
+
+  <!-- FlowDAgger -->
+  <rect class="node-leaf" x="820" y="357" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="885" y="375" font-size="11" fill="#333">FlowDAgger</text>
+  <path class="edge" d="M880,252 L885,390" marker-end="url(#arrow)"/>
+
+  <!-- Video children -->
+  <rect class="node-leaf" x="670" y="325" width="130" height="28" rx="4"/>
+  <text class="tax-sub" x="735" y="343" font-size="11" fill="#333">Robot Self-Impr.</text>
+  <path class="edge" d="M720,252 L735,358" marker-end="url(#arrow)"/>
+
+  <!-- Bottom = Surveys -->
+  <rect class="node-root" x="350" y="480" width="400" height="32" rx="6"/>
+  <text class="tax-label" x="550" y="501" fill="#fff" font-size="13">Surveys &amp; Benchmarks (7 papers)</text>
+
+  <path class="edge" d="M450,512 L450,540 L350,555" marker-end="url(#arrow)"/>
+  <path class="edge" d="M530,512 L530,540 L495,555" marker-end="url(#arrow)"/>
+  <path class="edge" d="M570,512 L570,540 L610,555" marker-end="url(#arrow)"/>
+  <path class="edge" d="M650,512 L650,540 L725,555" marker-end="url(#arrow)"/>
+
+  <rect class="node-leaf" x="300" y="540" width="130" height="26" rx="4"/>
+  <text class="tax-sub" x="365" y="557" font-size="10" fill="#333">World Model IJRR</text>
+  <rect class="node-leaf" x="440" y="540" width="130" height="26" rx="4"/>
+  <text class="tax-sub" x="505" y="557" font-size="10" fill="#333">VLA Survey ×3</text>
+  <rect class="node-leaf" x="570" y="540" width="140" height="26" rx="4"/>
+  <text class="tax-sub" x="640" y="557" font-size="10" fill="#333">Human Video IJCAI</text>
+  <rect class="node-leaf" x="700" y="540" width="140" height="26" rx="4"/>
+  <text class="tax-sub" x="770" y="557" font-size="10" fill="#333">FluxVLA / mimic</text>
+
+  <!-- Legend -->
+  <rect x="50" y="600" width="1000" height="100" rx="6" fill="#fafafa" stroke="#eee"/>
+  <text x="80" y="625" font-size="12" font-weight="600" fill="#333">Legend</text>
+  <rect x="80" y="635" width="50" height="18" rx="3" fill="#1a1a2e"/>
+  <text x="140" y="649" font-size="11" fill="#555">Root categories</text>
+  <rect x="250" y="635" width="50" height="18" rx="3" fill="#0f3460"/>
+  <text x="310" y="649" font-size="11" fill="#555">Subcategories</text>
+  <rect x="440" y="635" width="50" height="18" rx="3" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="500" y="649" font-size="11" fill="#555">Specific papers</text>
+
+  <text x="80" y="685" font-size="11" fill="#999">Note: Papers from Aug–Sep 2026. Dashed lines indicate partial alignment.</text>
+</svg>
+</body></html>
