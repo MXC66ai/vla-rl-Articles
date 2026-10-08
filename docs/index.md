@@ -44,4 +44,4 @@ See [Contributing Guide](contributing.md) to add new papers or corrections.
 
 ---
 
-*Automatically updated. Last scan: {{ build_date }}*
+*Automatically updated. Last scan: 2026-10-08 07:56 UTC (manual push test)*
