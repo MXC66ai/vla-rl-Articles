@@ -56,5 +56,5 @@ PR Submitted → CI Format Check → Human Review → Merged
 
 ## Recognition
 
-Contributors are listed in the [README](../README.md#contributors).  
+Contributors are listed in the [README](https://github.com/MXC66ai/vla-rl-Articles#contributors).  
 Top contributors get write access to the repository.

@@ -6,13 +6,13 @@
 
 | Paper | Venue | Skill Source | RL Algorithm |
 |:---|---:|:---|:---|
-| [SkillRL](../papers/2026-skillrl.md) | arXiv | LLM distillation (o3) | GRPO |
-| [Master Skill Learning](../papers/2026-master-skill.md) | **ICLR 2026** | LLM reward shaping | PPO |
-| [FlowDAgger](../papers/2026-flowdagger.md) | arXiv | Human correction (latent) | DAgger |
-| [Act While Waiting](../papers/2026-act-while-waiting.md) | arXiv | None (online) | Value-based |
-| [Residual RL](../papers/2026-residual-rl.md) | arXiv | Pre-trained skill prior | SAC |
-| [Robot Self-Improve](../papers/2026-robot-self-improve.md) | arXiv | Human video dynamics | Model-based |
-| [Efficient Skill Acq.](../papers/2025-efficient-skill.md) | **AAAI 2025 🎙** | LLM reward shaping | PPO |
+| [SkillRL](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-skillrl.md) | arXiv | LLM distillation (o3) | GRPO |
+| [Master Skill Learning](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-master-skill.md) | **ICLR 2026** | LLM reward shaping | PPO |
+| [FlowDAgger](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-flowdagger.md) | arXiv | Human correction (latent) | DAgger |
+| [Act While Waiting](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-act-while-waiting.md) | arXiv | None (online) | Value-based |
+| [Residual RL](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-residual-rl.md) | arXiv | Pre-trained skill prior | SAC |
+| [Robot Self-Improve](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2026-robot-self-improve.md) | arXiv | Human video dynamics | Model-based |
+| [Efficient Skill Acq.](https://github.com/MXC66ai/vla-rl-Articles/tree/main/papers/2025-efficient-skill.md) | **AAAI 2025 🎙** | LLM reward shaping | PPO |
 
 ## 🏆 Top Performers
 
